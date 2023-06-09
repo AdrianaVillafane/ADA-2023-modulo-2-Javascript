@@ -157,7 +157,15 @@ alert(`Escala en ${destinoUno}, tiempo aproximado:${duracionEscalaUno}hs, escala
 //INCREMENTO
 //Crear un programa que pida ingresar un número de partida y una cantidad a ir incrementando y mostrar cinco mensajes seguidos que muestren el número del mensaje y el total incrementado hasta el momento (p. ej.: comenzando con 5 e incrementando 5, "Incremento 1 ) Total: 10", "Incremento 2) Total: 15", "Incremento 3) Total: 20", etc.).
 
-
+let num=Number(prompt('Ingrese un numero'));
+let incremento= Number(prompt('Ingrese cantidad a ir incrementando'));
+let numIncre= Number(num+ incremento);
+let numIncre2= Number(numIncre+ incremento);
+let numIncre3= Number(numIncre2+ incremento);
+let numIncre4= Number(numIncre3+ incremento);
+let numIncre5= Number(numIncre4+ incremento);
+alert(`Comenzando con ${num} e incrementando ${incremento}, Incremento 1) Total:${numIncre}. Incremento 2) Total:${numIncre2}. Incremento 3) Total:${numIncre3}. Incremento 4) Total:${numIncre4}. Incremento 5) Total:${numIncre5}`
+);
 
 
 
