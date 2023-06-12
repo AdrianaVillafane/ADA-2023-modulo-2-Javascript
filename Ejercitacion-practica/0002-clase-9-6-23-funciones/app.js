@@ -171,3 +171,40 @@ const esImpar2 = (numC)=> {
         }
 }
 esImpar2(numC);
+
+//ejercicio 16
+let a= 3;
+let b= 4;
+const calcularAreaTriangulo=(a, b)=>{
+    console.log(Number(a*b/2));
+}
+calcularAreaTriangulo(3,4);
+
+//ejercicio 17
+let c= 5;
+let d= 6;
+const calcularAreaTriangulo2=(c , d)=>{
+    console.log(Number(c*d/2));
+}
+calcularAreaTriangulo2(5, 6);
+
+//ejercicio 18
+
+const gritar = (str) => {
+         return `¡${str}!`
+     }
+    
+     console.log(gritar('hola'));
+     console.log(gritar('aaaaaaaaaa'));
+     console.log(gritar('mierdaaaa'));
+
+//ejercicio 19
+
+let name= 'Anna';
+let lastName= 'Vila';
+
+const obtenerNombreCompleto=(name, lastName)=>{
+    console.log(`${name} ${lastName}`);
+}
+obtenerNombreCompleto('Anna', 'Vila');
+
