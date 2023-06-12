@@ -124,9 +124,9 @@ let num = 2;
 
 const esPar = (num)=> {
         if ((num % 2) == 0) {
-                console.log(`Par`);
+                console.log(`Par true`);
         } else if ((num % 2) == 1) {
-                console.log(`Impar`);
+                console.log(`Impar, false`);
         }
 }
 esPar(num);
@@ -137,9 +137,9 @@ let numA = 3;
 
 const esPar1 =(numA)=> {
         if ((numA % 2) == 0) {
-                console.log(`Par`);
+                console.log(`Par, true`);
         } else if ((numA % 2) == 1) {
-                console.log(`Impar`);
+                console.log(`Impar, false`);
         }
 }
 esPar1(numA);
@@ -150,11 +150,24 @@ esPar1(numA);
 let numB = 2;
 
 const esImpar = (numB)=> {
-        if ((num % 2) == 0) {
-                console.log(`Par`);
-        } else if ((num % 2) == 1) {
-                console.log(`Impar`);
+        if ((numB % 2) == 0) {
+                console.log(`Par, false`);
+        } else if ((numB % 2) == 1) {
+                console.log(`Impar, true`);
         }
 }
-esPar(num);
+esImpar(numB);
 
+//ejercicio 15
+
+
+let numC = 3;
+
+const esImpar2 = (numC)=> {
+        if ((numC % 2) == 0) {
+                console.log(`Par, false`);
+        } else if ((numC % 2) == 1) {
+                console.log(`Impar, true`);
+        }
+}
+esImpar2(numC);
