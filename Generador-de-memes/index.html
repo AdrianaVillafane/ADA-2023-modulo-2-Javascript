@@ -29,7 +29,42 @@
     
 </header>
 <aside>
+    <button><i class="fa-solid fa-xmark"></i></button>
     <h2>Imagen</h2>
+    <label for="url"> URL:</label>
+
+<input type="url" name="url" id="url"
+       placeholder="https://example.com"
+       pattern="https://.*" size="30"
+       required>
+
+    FONDO
+    Filtros
+   <label for="brillo">BRILLO</label> 
+    <input type="range" min="-10" max="10" value="0" class="drag_bar">
+    <label for="opacidad">OPACIDAD</label> 
+    <input type="range" min="0" max="100">
+    <label for="contraste">CONTRASTE</label> 
+    <input type="range" min="0" max="100">
+    <label for="desenfoque">DESENFOQUE</label> 
+    <input type="range" min="0" max="100">
+  
+    <label for="escala_grises">ESCALA DE GRISES</label> 
+    <input type="range" min="0" max="100">
+  
+    <label for="sepia">SEPIA</label> 
+    <input type="range" min="0" max="100">
+   
+      <label for="hue">HUE</label> 
+    <input type="range" min="0" max="100">
+  
+    <label for="saturacion">SATURADO</label> 
+    <input type="range" min="0" max="100">
+   
+    <label for="negativo">NEGATIVO</label> 
+    <input type="range" min="0" max="100">
+    <button>Reestablecer Filtros</button>
+
 </aside>
 
 
@@ -39,12 +74,50 @@
 
 
 <aside>
+    <button><i class="fa-solid fa-xmark"></i></button>
     <h2>Texto</h2>
+    <label for="superior">SUPERIOR</label>
+    <input type="text">
+    <input type="checkbox" id="texto_superior" name="text_sup" checked>
+    <label for="chekbox">Sin texto superior</label>
+    <label for="superior">INFERIOR</label>
+    <input type="text">
+    <input type="checkbox" id="texto_inferior" name="text_inf" checked>
+    <label for="chekbox">Sin texto inferior</label>
+    <label for="fuente">FUENTE</label>
+   
+    <select name="font-family" id="font-family">
+        <option value="arial">Arial</option>
+        <option value="arial black">Arial Black</option>
+        <option value="american typewriter">American Typewriter</option>
+        <option value="andale mono">Andale Mono</option>
+        <option value="comic sans ms">Comic Sans MS</option>
+        <option value="helvetica">Helvetica</option>
+        <option value="impact">Impact</option>
+        <option value="verdana">Verdana</option>
+        <option value="times new roman">Times New Roman</option>
+    </select>
+
+    <selec name="font-size" id="font-size">
+<input type="number" id="font-size" name="font-size" min="12" max="100">
+
+    </selec>
+    ACA VA LA ALINEACION
+
+    <label for="muestrario">Color:</label>
+<input type="color" value="#ff0000" id="muestrario">
 </aside>
 
 
 
 
+
+
+
+
+<div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="drag__bar" id="myRange">  
+  </div>
 
 
     <script src="app.js"></script>
