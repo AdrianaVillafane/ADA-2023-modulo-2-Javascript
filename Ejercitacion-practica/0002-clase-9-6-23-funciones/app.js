@@ -208,3 +208,70 @@ const obtenerNombreCompleto=(name, lastName)=>{
 }
 obtenerNombreCompleto('Anna', 'Vila');
 
+// ejercicio 20
+let nombre= 'Anna';
+const saludar=(nombre)=>{
+    return (`Hola ${nombre}, un gusto conocerte`);
+}
+saludar('Anna');
+
+//ejercicio 21
+//`saludarGritando(nombre, apellido)`
+
+//Usando las funciones anteriores (`obtenerNombreCompleto`, `saludar` y `gritar`), crear una función `saludarGritando` que tome como argumentos un nombre y un apellido y devuelva un saludo con signos de exclamación.
+const saludarGritando=(nombre, apellido)=>{
+    return ('¡'+ saludar('Anna')+'!');
+}
+
+
+saludarGritando('Ada', 'Lovelace'); // ¡Hola Ada Lovelace, un gusto conocerte!
+console.log(saludarGritando());
+
+//**TIP:** recordá que los resultados de funciones se pueden guardar en variables para usarlos más adelante
+
+
+//ejercicio 22
+// obtenerDatosDeCiudad(nombre, poblacion, pais)
+
+//Crear una función `obtenerDatosDeCiudad` que tome como argumentos un string `nombre`, un número `poblacion` y un string `pais` y devuelva string con el siguiente formato: `La ciudad de NOMBRE tiene una población de POBLACION habitantes y está ubicada en PAIS`
+
+
+let nombreCiudad;
+let poblacion;
+let pais;
+
+const obtenerDatosDeCiudad=(nombreCiudad, poblacion, pais)=>{
+    return (`La ciudad de ${nombreCiudad} tiene una poblacion de ${poblacion} habitantes y esta ubicada en ${pais}`);
+}
+
+console.log(obtenerDatosDeCiudad('Santa Fe', 545606, 'Argentina')); // 'La ciudad de Santa Fe tiene una población de 545606 habitantes y está ubicada en Argentina'
+
+//ejercicio 23
+//`convertirHorasEnSegundos(horas)`
+
+//Crear una función `convertirHorasEnSegundos` que tome como argumento un número de horas y devuelva la conversión a segundos de dicha cantidad de horas
+let horas;
+
+
+const convertirHorasEnSegundos=(horas)=>{
+    return Number(horas*3600);
+}
+
+console.log(convertirHorasEnSegundos(1)); // 3600
+console.log(convertirHorasEnSegundos(3)) // 10800
+console.log(convertirHorasEnSegundos(4.5)); // 16200
+
+//ejercicio 24
+//`calcularPerimetroRectangulo(ancho, alto)`
+
+//Crear una función `calcularPerimetroRectangulo` que tome como argumentos el ancho y el alto de un rectángulo y devuelva su perímetro
+let lado1=Number();
+let lado2=Number();
+
+
+const calcularPerimetroRectangulo=(lado1, lado2)=>{
+    return (lado1*2+lado2*2);
+}
+
+console.log(calcularPerimetroRectangulo(3.2, 5)); // 16.4
+console.log(calcularPerimetroRectangulo(10, 20)); // 60
