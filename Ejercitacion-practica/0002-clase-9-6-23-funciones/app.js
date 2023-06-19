@@ -275,3 +275,31 @@ const calcularPerimetroRectangulo=(lado1, lado2)=>{
 
 console.log(calcularPerimetroRectangulo(3.2, 5)); // 16.4
 console.log(calcularPerimetroRectangulo(10, 20)); // 60
+
+
+//ejercicio 25
+//`calcularPorcentaje(numero, porcentaje)`
+
+//Crear una función `calcularPorcentaje` que tome como argumentos un número y un porcentaje y devuelva el valor del porcentaje correspondiente al número
+
+const calcularPorcentajes=(num, porcen)=>{
+    return (num*porcen/100);
+}
+console.log(calcularPorcentajes(100, 15)); // 15
+console.log(calcularPorcentajes(10, 50)); // 5
+console.log(calcularPorcentajes(200, 10)); // 20
+
+//ejercicio 26
+// `sumarPorcentaje(numero, porcentaje)`
+
+//Crear una función `sumarPorcentaje` que tome como argumentos un número y un porcentaje y devuelva la suma de dicho número con la de su porcentaje. Usar la función `calcularPorcentaje` para obtener el porcentaje a sumar
+
+let numD;
+let porcen2;
+
+const sumarPorcentaje=(numD, porcen2)=>{
+    return ((numD*porcen2/100)+numD);
+}
+console.log(sumarPorcentaje(100, 15)); // 115
+console.log(sumarPorcentaje(10, 50)); // 15
+console.log(sumarPorcentaje(200, 10)); // 220
