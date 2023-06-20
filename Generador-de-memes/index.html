@@ -30,7 +30,10 @@
         </div>
     
 </header>
-<aside>
+<main class="editor">
+   
+<div class="right">
+<aside class="imagen">
     <button><i class="fa-solid fa-xmark"></i></button>
     <h2>Imagen</h2>
     <label for="url"> URL:</label>
@@ -43,39 +46,39 @@
     FONDO
     Filtros
    <label for="brillo">BRILLO</label> 
-    <input type="range" min="-10" max="10" value="0" class="drag_bar">
+    <input type="range" min="0" max="100" value="0" class="myRange">
     <label for="opacidad">OPACIDAD</label> 
-    <input type="range" min="0" max="100">
+    <input type="range" min="0" max="100" value= "0" class="myRange">
     <label for="contraste">CONTRASTE</label> 
-    <input type="range" min="0" max="100">
+    <input type="range" min="0" max="100" value= "0" class="myRange">
     <label for="desenfoque">DESENFOQUE</label> 
-    <input type="range" min="0" max="100">
+    <input type="range" min="0" max="100" value= "0" class="myRange">
   
     <label for="escala_grises">ESCALA DE GRISES</label> 
-    <input type="range" min="0" max="100">
+    <input type="range" min="0" max="100" value= "0" class="myRange">
   
     <label for="sepia">SEPIA</label> 
-    <input type="range" min="0" max="100">
+    <input type="range" min="0" max="100" value= "0" class="myRange">
    
       <label for="hue">HUE</label> 
-    <input type="range" min="0" max="100">
+    <input type="range" min="0" max="100" value= "0" class="myRange">
   
     <label for="saturacion">SATURADO</label> 
-    <input type="range" min="0" max="100">
+    <input type="range" min="0" max="100" value= "0" class="myRange">
    
     <label for="negativo">NEGATIVO</label> 
-    <input type="range" min="0" max="100">
+    <input type="range" min="0" max="100" value= "0" class="myRange">
     <button>Reestablecer Filtros</button>
 
 </aside>
+</div>
 
 
 
 
 
-
-
-<aside>
+<div class="right">
+<aside class="texto">
     <button><i class="fa-solid fa-xmark"></i></button>
     <h2>Texto</h2>
     <label for="superior">SUPERIOR</label>
@@ -109,17 +112,22 @@
     <label for="muestrario">Color:</label>
 <input type="color" value="#ff0000" id="muestrario">
 </aside>
+</div>
+
+<div class="generador">
+    <div class="textoSuperior">
+        <h2>Texto superior</h2>
+    </div>
+    <div class="meme">imagen</div>
+    <div class="textoInferior">
+        <h2>Texto inferior</h2>
+    </div>
+</div>
 
 
+<button class="botonDescarga">Descargar Meme</button>
 
-
-
-
-
-
-<div class="slidecontainer">
-    <input type="range" min="1" max="100" value="50" class="drag__bar" id="myRange">  
-  </div>
+</main>
 
 
     <script src="app.js"></script>
