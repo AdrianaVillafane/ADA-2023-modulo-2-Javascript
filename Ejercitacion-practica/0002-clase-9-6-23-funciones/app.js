@@ -282,12 +282,12 @@ console.log(calcularPerimetroRectangulo(10, 20)); // 60
 
 //Crear una función `calcularPorcentaje` que tome como argumentos un número y un porcentaje y devuelva el valor del porcentaje correspondiente al número
 
-const calcularPorcentajes=(num, porcen)=>{
+const calcularPorcentaje=(num, porcen)=>{
     return (num*porcen/100);
 }
-console.log(calcularPorcentajes(100, 15)); // 15
-console.log(calcularPorcentajes(10, 50)); // 5
-console.log(calcularPorcentajes(200, 10)); // 20
+console.log(calcularPorcentaje(100, 15)); // 15
+console.log(calcularPorcentaje(10, 50)); // 5
+console.log(calcularPorcentaje(200, 10)); // 20
 
 //ejercicio 26
 // `sumarPorcentaje(numero, porcentaje)`
@@ -303,3 +303,19 @@ const sumarPorcentaje=(numD, porcen2)=>{
 console.log(sumarPorcentaje(100, 15)); // 115
 console.log(sumarPorcentaje(10, 50)); // 15
 console.log(sumarPorcentaje(200, 10)); // 220
+
+//ejercicio 27
+// `restarPorcentaje(numero, porcentaje)`
+
+//Crear una función `restarPorcentaje` que tome como argumentos un número y un porcentaje y devuelva la resta de dicho número con la de su porcentaje. Usar la función `calcularPorcentaje` para obtener el porcentaje a restar
+let g= 100;
+let porcen= 15;
+const restarPorcentaje=(g, porcen)=>{
+
+    return (g-(g*porcen/100));
+}
+
+console.log(restarPorcentaje(100, 15)); // 85              
+console.log(restarPorcentaje(10, 40)); // 6
+console.log(restarPorcentaje(200, 10)); // 180
+
