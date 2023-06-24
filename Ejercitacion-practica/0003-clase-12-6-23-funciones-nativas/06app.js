@@ -18,3 +18,4 @@ function burlarse(str) {
 
 console.log(burlarse('programar es dificil')); // 'prigimir is dificil'
 console.log(burlarse('Pienso, luego existo'));
+console.log(burlarse('el gato baila en el tejado'));
