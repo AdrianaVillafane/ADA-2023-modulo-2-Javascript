@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animales</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Animales</title>
+</head>
+<body>
+  <h1>Selecciona un animal:</h1>
+  <button onclick="mostrarImagen('perro')">Perro</button>
+  <button onclick="mostrarImagen('gato')">Gato</button>
+  <button onclick="mostrarImagen('elefante')">Elefante</button>
+  <br>
+  <img src="placeholder.png" alt="Imagen del animal" id="animal-imagen">
+
+  <script>
+    function mostrarImagen(animal) {
+      var imagen = document.getElementById("animal-imagen");
+      switch (animal) {
+        case "perro":
+          imagen.src = "perro.jpg";
+          break;
+        case "gato":
+          imagen.src = "gato.jpg";
+          break;
+        case "elefante":
+          imagen.src = "elefante.jpg";
+          break;
+        default:
+          imagen.src = "placeholder.png";
+          break;
+      }
+    }
+
+    var animalElegido = prompt("Elige un animal: perro, gato o elefante");
+    mostrarImagen(animalElegido);
+  </script>
+</body>
+</html>
+
+</body>
+</html>
